@@ -15,6 +15,7 @@
         'views/employe.xml',
         'report/report.xml',
         'report/report_pdf.xml',
+        'data/sequence.xml',
 
     ],
 
