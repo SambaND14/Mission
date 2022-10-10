@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <odoo>
+    <data>
+      <!-- webpage record -->
+      <template id="report_pdf">
+          <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+
+              <br></br>
+              <br></br>
+
+
+
+                          <h1 style="text-align:center; font-size:60px;">Ordre de Mission</h1>
+                            <h3 style="text-align:center; font-size:20px;">Aéroport International Blaise Diagne - Société Anonyme(AIBD-SA)</h3>
+
+
+                              <br></br>
+                              <br></br>
+
+                            <table  height="50" align="center" >
+                                <tr>
+                                <th> <p style="text-align:left; font-size:20px;"  t-field="o.num"/> </th>
+                                </tr>
+                            </table>
+
+                            <br></br>
+                            <br></br>
+
+                          <table  height="500" align="center" class="table table-condensed">
+
+
+
+                              <tr>
+                                <th width ="30%">  <p style="text-align:left; font-size:18px;">Prénom  et  Nom :</p> </th>
+                                <th width ="70%">  <p style="text-align:left; font-size:22px;"  t-field="o.name"/>  </th>
+                              </tr>
+
+                          <tr>
+                              <th width ="30%"><p style="text-align:left; font-size:18px;">Grade  et  Fonction :</p></th>
+                              <th width ="70%"><p style="text-align:left; font-size:22px;"  t-field="o.grade"/></th>
+                          </tr>
+
+                          <tr>
+                              <th width ="30%"><p style="text-align:left; font-size:18px;">Se  rendra   à :</p></th>
+                              <th width ="70%"><p style="text-align:left; font-size:22px;"  t-field="o.dest"/></th>
+                          </tr>
+
+                          <tr>
+                              <th width ="30%"><p style="text-align:left; font-size:18px;">Motif  de  la  mission :</p></th>
+                              <th width ="70%"><p style="text-align:left; font-size:22px;"  t-field="o.motif"/></th>
+                          </tr>
+
+                          <tr>
+                              <th width ="30%"><p style="text-align:left; font-size:18px;">Date  de  départ :</p></th>
+                              <th width ="70%"><p style="text-align:left; font-size:22px;"  t-field="o.d_dep"/></th>
+                          </tr>
+
+                          <tr>
+                              <th width ="30%"><p style="text-align:left; font-size:18px;">Date  de  retour :</p></th>
+                              <th width ="70%"><p style="text-align:left; font-size:22px;"  t-field="o.d_rtr"/></th>
+                          </tr>
+
+                          <tr>
+                              <th width ="30%"><p style="text-align:left; font-size:18px;">Moyen  de  transport :</p></th>
+                              <th width ="70%"><p style="text-align:left; font-size:22px;"  t-field="o.transport"/></th>
+                          </tr>
+
+                          </table>
+
+                            <br></br>
+                            <br></br>
+                            <br></br>
+
+
+
+                            <table align="right">
+                                <tr>
+                                     <th><p style="text-align:left; font-size:20px;"/> Dakar, le </th>
+                                     <th>  <p style="text-align:left; font-size:15px;"  t-field=" o.date"/>  </th>
+                                </tr>
+                            </table>
+
+
+          </div>
+        </t>
+                </t>
+                    </t>
+      </template>
+    </data>
+  </odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <report
+        id="report_employe_pdf"
+        string="Ordre de Mission"
+        model="mission.employe"
+        report_type="qweb-pdf"
+        name="Mission.report_pdf"
+        file="Mission.report_pdf"/>
+
+
+</odoo>

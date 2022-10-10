@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sequence_tips" model="ir.sequence">
+            <field name="name">Tips Sequence</field>
+            <field name="code">mission.employe.sequence</field>
+            <field name="active">TRUE</field>
+            <field name="prefix"> AIBD/ OM : </field>
+            <field name="suffix"> / 2022 </field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+
+
+
+        </record>
+
+        <record  model="ir.ui.view" id="views_employe" >
+            <field name="name">Employe</field>
+            <field name="model">mission.employe</field>
+            <field name="arch" type="xml">
+                <tree string="Ordre de Mission">
+
+                    <field name="num"/>
+                    <field name="name"/>
+                    <field name="grade"/>
+                    <field name="dest"/>
+                    <field name="motif"/>
+                    <field name="d_dep"/>
+                    <field name="d_rtr"/>
+                    <field name="transport"/>
+                    <field name="date"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record  model="ir.ui.view" id="form_employe">
+            <field name="name">employe_form</field>
+            <field name="model">mission.employe</field>
+            <field name="arch" type="xml">
+                <form string="Ordre de Mission">
+                    <group>
+                    <field name="num"/>
+                    <field name="name"/>
+                    <field name="grade"/>
+                    <field name="dest"/>
+                    <field name="motif"/>
+                    <field name="d_dep"/>
+                    <field name="d_rtr"/>
+                    <field name="transport"/>
+                    <field name="date"/>
+                    </group>
+                </form>
+
+            </field>
+        </record>
+
+
+        <record model="ir.actions.act_window" id="mission_action_window">
+             <field name="name">Ordre de Mission</field>
+            <field name="res_model">mission.employe</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem name="Ordre de Mission" id="mission_root"/>
+
+        <menuitem name="Liste" id="menu_employe_cat" parent="mission_root"/>
+
+        <menuitem name="Liste des Employés" id="menu_employe_list"
+                parent="menu_employe_cat" action="mission_action_window" />
+
+
+    </data>
+</odoo>
