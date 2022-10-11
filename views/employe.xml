@@ -30,21 +30,23 @@
             <field name="arch" type="xml">
                 <form string="Ordre de Mission">
                     <group>
+                        <group>
 
                             <field name="num"/>
                             <field name="name"/>
                             <field name="grade"/>
                             <field name="dest"/>
                             <field name="motif"/>
-                    </group>
+                        </group>
 
-                    <group>
+                        <group>
+                            <br></br>
                             <field name="d_dep"/>
                             <field name="d_rtr"/>
                             <field name="transport"/>
                             <field name="date"/>
+                        </group>
                     </group>
-
                 </form>
 
             </field>

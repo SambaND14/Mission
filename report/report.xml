@@ -7,8 +7,8 @@
         string="Ordre de mission"
         model="mission.employe"
         report_type="qweb-pdf"
-        name="Mission.report_pdf"
-        file="Mission.report_pdf"/>
+        name="mission.report_pdf"
+        file="mission.report_pdf"/>
 
 
 </odoo>
