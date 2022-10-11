@@ -36,12 +36,15 @@
                             <field name="grade"/>
                             <field name="dest"/>
                             <field name="motif"/>
+                    </group>
+
+                    <group>
                             <field name="d_dep"/>
                             <field name="d_rtr"/>
                             <field name="transport"/>
                             <field name="date"/>
-
                     </group>
+
                 </form>
 
             </field>

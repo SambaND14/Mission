@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # le fichier qui décrit le module
 {
-    'name' : 'Ordre de Mission',
+    'name' : 'Ordre de mission',
     'summary': 'Ordre de mission',
     'sequense': 1,
     'description': """ Ce module est developpé par Samba Ndiaye""",
